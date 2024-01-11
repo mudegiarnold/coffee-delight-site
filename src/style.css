@@ -18,7 +18,7 @@
 
 body{
   font-family: 'Open Sans', sans-serif;
-  background: linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)),url('../img/bodyBcg.jpeg');
+  background: linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)),url('img/bodyBcg.jpeg');
   color: var(--black);
 }
 /* global styles */
@@ -71,23 +71,6 @@ body{
 
 /* end of global styles */
 
-/* preloader */
-
-.preloader{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--brightYellow);
-  z-index: 999;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
 /* header */
 .header{
   height: 100vh;
@@ -97,17 +80,17 @@ body{
   align-items: center;
   position: relative;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:1900px){
   .header{
-    background: url('../img/headerBcg.jpeg')center/cover fixed no-repeat;
+    background: url('img/headerBcg.jpeg')center/cover fixed no-repeat;
     /* background-position: center;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat; */
   }
 }
-/* banner  */
 
+/* banner  */
 .banner{
   text-align: center;
   z-index: 3;
@@ -246,11 +229,6 @@ transform: scale(1)
   grid-template-columns: 70%;
   justify-content: center;
   grid-row-gap: 1.25rem;
-}
-.drink-form__feedback{
-  border:0.1rem solid var(--brightYellow);
-  padding: 0.25rem;
-  display: none;
 }
 .error{
   display: block;
@@ -409,7 +387,7 @@ transform: scale(1)
   align-items: center;
 }
 .work-modal__item{
-  background: url('../img/work-1.jpeg')center/cover;
+  background: url('img/work-1.jpeg')center/cover;
   height: 70vh;
   width: 80vw;
   border:0.5rem solid var(--yellow);
@@ -436,19 +414,6 @@ transform: scale(1)
   color: red;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* contact section */
 .contact-container{
   max-width: 90vw;
@@ -469,14 +434,12 @@ transform: scale(1)
   color: var(--yellow)
 }
 .contact-item__title{
-  text-transform: uppercase;
   margin: 0.5rem 0;
   letter-spacing: 0.25rem;
   font-style: italic;
 }
 .contact-item__text{
   font-size: 1rem;
-  text-transform: uppercase;
   color: var(--grey);
 }
 @media screen and (min-width:768px){
